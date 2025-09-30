@@ -28,7 +28,7 @@ Directory __queries__ containts the queries executed in PostgreSQL for 1NF, 2NF 
 ### Data collection
 Query execution results (query completion and query duratiion) were collected using JMeter,
 
-For each query a 30-minute timeout was set (and controlled through JMeter).
+For each query, a 30-minute timeout was set (and controlled through JMeter).
 
 Directory __data__ containts the files with the query parameters and the query execution results.
 
