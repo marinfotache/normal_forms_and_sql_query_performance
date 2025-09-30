@@ -42,7 +42,7 @@ Directory __data__ containts the files with query parameters and query execution
 * _duration_sec_ (query execution time in seconds for each completed query).
 
 ### Method
-* exploratory data analysis (see scripts __1a..._ and __1b...__ in directory __scripts__)
+* exploratory data analysis (see scripts __1a...__, __1b...__, and __1c...__ in directory __scripts__)
 * statistical tests for analysing the association between query completion and the normal form (see scripts __2a...__ and __2b...__ in directory __scripts__)
 * Machine Learning models based on random forest and extreme gradient boosting algoritms (see scripts __3a...__ and __3b...__ in directory __scripts__) for:
   - prediction of odds of _query_completion_ (classification)
