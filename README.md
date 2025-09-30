@@ -21,27 +21,30 @@ For each scale factor:
 * the query set was converted for the 2NF and 1NF (mainly by removing the unnecesary joins)
 * all the queris were tweaked for execution in all three DBMSs (there are some differences among the three SQL dialects)
   
-Directory __data__ containts the queries executed in PostgreSQL for 1NF, 2NF and 3NF and scale factors of 0.1GB and 1GB.
+Directory __queries__ containts the queries executed in PostgreSQL for 1NF, 2NF and 3NF and scale factors of 0.1GB and 1GB.
+
 
 ### Data collection
 Query execution results (query completion and query duratiion) were collected using JMeter,
 For each query a 30-minute timeout was set (and controlled through JMeter).
+Directory __data__ containts the files with the query parameters and the query execution results.
+
 
 ### Variables
-* dbserver (MS-SQL Server, MySQL, PostgreSQL)
-* scale_factor (for this study, the TPC-H database was populated with data of 0.1GB and 1GB)
-* normal_form (1NF, 2NF, or 3NF)
-* various parametera describing to query complexity (e.g., the number of joins, number of predicated in WHERE, etc.)
-* query_completion (whether the query execution was completed during the 30 minute timeout)
-* duration_sec (query execution time (in seconds) for each completed query)
+* _dbserver_ (MS-SQL Server, MySQL, PostgreSQL)
+* _scale_factor_ (for this study, the TPC-H database was populated with data of 0.1GB and 1GB)
+* _normal_form_ (1NF, 2NF, or 3NF)
+* various parameters describing to query complexity (e.g., the number of joins, number of predicated in WHERE, etc.)
+* _query_completion_ (whether the query execution was completed during the 30 minute timeout)
+* _duration_sec) (query execution time in seconds for each completed query)
 
 ### Method
-* exploratory data analysis (see scripts 1a and 1b in directory scripts)
-* statistical tests for analysing the association between query completion and the normal form (see scripts 2a and 2b in directory scripts)
-* machine Learning models (using random forest and extreme gradient boosting algoritms) for:
-  - prediction of the odds of query completion (classification)
-  - prediction of the  query duration (scoring)
-  - estimating the importance of predictor normal_form in the outcome variability (among all other predictors)
+* exploratory data analysis (see scripts __1a..._ and __1b...__ in directory __scripts__)
+* statistical tests for analysing the association between query completion and the normal form (see scripts __2a...__ and __2b...__ in directory __scripts__)
+* machine Learning models based on random forest and extreme gradient boosting algoritms (see scripts __3a...__ and __3b...__ in directory __scripts__) for:
+  - prediction of odds of _query_completion_ (classification)
+  - prediction of query _duration_sec_ (scoring)
+  - estimating the importance (among all predictors) of the predictor _normal_form_ in the outcome variability (_query_completion_ and _duration_sec__
   - examination of feature effects on the outcome (using techniques of interpretable ML)
 
 
