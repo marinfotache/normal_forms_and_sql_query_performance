@@ -1,4 +1,4 @@
-# Normal Forms and SQL Query Performance
+# Database Normal Forms and SQL Query Performance
 
 ## Goal
 In this study, the effects of database normalization (first three normanl forms, i.e. 1NF, 2NF, and 3NF) on the TPC-H database were tested for MS-SQL Server, MySQL, and PostgreSQL. 
