@@ -19,9 +19,9 @@ library(ggstatsplot)
 library(effectsize)
 #citation('ggstatsplot')
 
-
-
-# uncomment and execute the next line to set the default/current directory according to your local confoguration
+# By default, the current directory is associated to the folder when cloning
+#  the repo from github.
+# Uncomment and execute the next line if you want to change the default/current directory,
 # setwd('here is the path to your current directory')
 
 base_path <- getwd()
