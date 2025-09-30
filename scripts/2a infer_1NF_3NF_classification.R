@@ -18,11 +18,12 @@ citation('rstatix')
 library(ggstatsplot)
 library(effectsize)
 #citation('ggstatsplot')
-
 library(RVAideMemoire)
 
 
-setwd('/Users/marinfotache/Dropbox/2024-03 Normal Forms and SQL Query Performance/git_repo/normal_forms_and_sql_query_performance')
+# uncomment and execute the next line to set the default/current directory according to your local confoguration
+# setwd('here is the path to your current directory')
+
 base_path <- getwd()
 
 
