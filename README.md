@@ -13,13 +13,14 @@ SQL performance was assesed following:
 Three (sub)schemas of the TPC-H benchmark database were created and populated (using the DBGen utility provided by the TPC-H) for:
 * three database servers MS-SQL Server, MySQL, and PostgreSQL
 * two scale factors (0.1 GB and 1GB)
-* three normal forms (!NF, 2NF, and 3NF) of the TPC-H database
+* three normal forms (1NF, 2NF, and 3NF) of the TPC-H database
 
 ### The SQL query set
 For each scale factor:
 * an initial 1,000 SQL query set was created (randomly) for the original (3NF) TPC-H schema
 * the query set was converted for the 2NF and 1NF (mainly by removing the unnecesary joins)
 * all the queris were tweaked for execution in all three DBMSs (there are some differences among the three SQL dialects)
+  
 Directory __data__ containts the queries executed in PostgreSQL for 1NF, 2NF and 3NF and scale factors of 0.1GB and 1GB.
 
 ### Data collection
