@@ -39,7 +39,7 @@ Directory __data__ containts the files with the query parameters and the query e
 * _normal_form_ (1NF, 2NF, or 3NF)
 * various parameters describing to query complexity (e.g., the number of joins, number of predicated in WHERE, etc.)
 * _query_completion_ (whether the query execution was completed during the 30 minute timeout)
-* _duration_sec) (query execution time in seconds for each completed query)
+* _duration_sec_ (query execution time in seconds for each completed query)
 
 ### Method
 * exploratory data analysis (see scripts __1a..._ and __1b...__ in directory __scripts__)
